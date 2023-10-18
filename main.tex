@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[english]{babel}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\DeclareMathOperator*{\expectation}{\mathbb{E}}
+
+\newcommand*{\nf}[1]{\mathrm{#1}}
+\newcommand*{\field}[1]{\mathbb{#1}}
+\newcommand*{\CC}{\field{C}}
+
+\begin{document}
+exercise 1
+\begin{equation}
+    (a^b)^c, a^{b^c}
+\end{equation}
+
+exercise 2
+\begin{equation}
+    \frac{\frac{1}{x} + \frac{1}{y}}{y - z}
+\end{equation}
+
+exercise 3
+\begin{equation}
+    \left|\sum_{i=1}^{n}a_i\right| \le \left(\sum_{i=1}^{n}a_i^2\right)^{\frac{1}{2}} \cdot \sqrt[]{\sum_{i=1}^{n}b_i^2}
+\end{equation}
+
+exercise 4
+\begin{equation}
+    \int y\, dx
+\end{equation}
+
+exercise 5
+\[
+    \forall \epsilon > 0 \quad \exists \delta \quad \text{such that} \quad \forall x,y \in \mathbb{R}: \left|x-y\right|<\delta \Rightarrow \left|f(x+\delta)-f(x)\right| < \epsilon.
+\]
+
+exercise 6
+\begin{definition}
+    If for a infinite $S$ then the expectation
+    % \[\mathbb{E}X = \sum_{x \in S}^{} xP(X = x).\]
+    \[\expectation X = \sum_{x \in S}^{} xP(X = x).\]
+\end{definition}
+
+\begin{theorem}[Cauchy-Schwarz inequality]
+    if $X$ and $Y$ are random variables with $\field{E}X^2 \le \infty$ and $\field{E}Y^2 \le \infty$, then
+    \[|\nf{Cov}(X,Y)| \le \sqrt{\mathrm{Var}(X)} \sqrt{\mathrm{Var}(Y)}\]
+\end{theorem}
+
+\end{document}
