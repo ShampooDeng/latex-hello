@@ -3,13 +3,16 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{mathtools}
-\usepackage[english]{babel}
+\usepackage[english]{babel} % what this is for?
 
+% more detials can be found in https://en.wikibooks.org/wiki/LaTeX/Theorems.
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 
+% some disscussion about the difference of \DeclareMathOperator and \newcommand,
+% https://tex.stackexchange.com/questions/67506/newcommand-vs-declaremathoperator.
 \DeclareMathOperator*{\expectation}{\mathbb{E}}
 
 \newcommand*{\nf}[1]{\mathrm{#1}}
